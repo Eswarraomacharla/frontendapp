@@ -53,10 +53,10 @@ const Home = () => {
                         <h3>Contact Us:</h3>
                         <p>If you have any questions or feedback, feel free to reach out to us:</p>
                         <ul>
-                            <li>Email: info@coursemanagementsystem.com</li>
-                            <li>Phone: +123-456-7890</li>
-                            <li>Address: 123 Main Street, Cityville, State, Country</li>
-                        </ul>
+        <li>Email: eswarmarcharla143@gmail.com</li>
+        <li>Phone: 9618074482</li>
+        <li>Address: JC Main Street, visakhapatnam,India</li>
+      </ul>
                     </div>
                 </div>
             </div>
