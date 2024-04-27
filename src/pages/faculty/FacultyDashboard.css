@@ -1,0 +1,58 @@
+.faculty-dashboard {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.nav {
+  margin-bottom: 20px;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-item a:hover {
+  color: #555;
+}
+
+.faculty-info {
+  margin-bottom: 20px;
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.bottom-menu {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ui.form .field>label {
+  font-weight: bold;
+}
+
+.ui.form .field>label, .ui.form .field>label:after {
+  color: #666666 !important;
+}
+
+.ui.button.primary {
+  background-color: #2185d0 !important;
+}
+
+.ui.button.primary:hover {
+  background-color: #1678c2 !important;
+}

@@ -1,0 +1,46 @@
+/* DisplayMapping.css */
+
+/* Style for the responsive table */
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.responsive-table th,
+.responsive-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.responsive-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.responsive-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.responsive-table tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+/* Style for the action buttons */
+.update-btn,
+.delete-btn {
+  padding: 8px 12px;
+  margin-right: 8px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+.update-btn:hover,
+.delete-btn:hover {
+  background-color: #0056b3;
+}

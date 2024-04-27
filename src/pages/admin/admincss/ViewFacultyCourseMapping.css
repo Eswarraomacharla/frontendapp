@@ -1,0 +1,34 @@
+/* ViewFacultyCourseMapping.css */
+
+.view-faculty-course-mapping-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .error-message {
+    color: red;
+  }
+  
+  .mapping-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .mapping-table th,
+  .mapping-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .mapping-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .mapping-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .mapping-table tbody tr:hover {
+    background-color: #ddd;
+  }
+  

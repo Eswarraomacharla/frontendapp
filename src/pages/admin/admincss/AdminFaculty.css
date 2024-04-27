@@ -1,0 +1,66 @@
+/* AdminFaculty.css */
+.admin-faculty {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.faculty {
+  flex: 0 0 60%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.heading {
+  color: #333;
+}
+
+.nav {
+  margin-top: 20px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-item {
+  margin-bottom: 10px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.faculty-content {
+  flex: 0 0 35%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.faculty-content h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.faculty-content p {
+  color: #666;
+}
+
+.faculty-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.faculty-content ul li {
+  margin-bottom: 5px;
+}
+
+.faculty-content ul li a {
+  text-decoration: none;
+  color: #007bff;
+}

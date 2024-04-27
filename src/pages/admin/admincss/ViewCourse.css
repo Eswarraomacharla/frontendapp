@@ -1,0 +1,36 @@
+/* ViewCourse.css */
+.view-course-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.view-course-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+.course-table th, .course-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.course-table th {
+    background-color: #f2f2f2;
+}
+
+.course-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,58 @@
+/* admincss/UpdateFaculty.css */
+
+.update-faculty-container {
+    margin: 20px;
+  }
+  
+  .faculty-list {
+    margin-bottom: 20px;
+  }
+  
+  .update-form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .update-form input,
+  .update-form select {
+    display: block;
+    margin-bottom: 10px;
+    width: calc(100% - 20px);
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .update-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .update-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .faculty-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .faculty-list th,
+  .faculty-list td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .faculty-list th {
+    background-color: #f4f4f4;
+  }
+  
+  .faculty-list tbody tr:hover {
+    background-color: #f0f0f0;
+  }
+  

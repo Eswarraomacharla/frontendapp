@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/STUDENT-COURSE-MANAGEMENT-SYSTEM-using-MERN-STACK/static/css/main.81e8d2c5.css",
+    "main.js": "/STUDENT-COURSE-MANAGEMENT-SYSTEM-using-MERN-STACK/static/js/main.c731620c.js",
+    "static/js/453.5e560239.chunk.js": "/STUDENT-COURSE-MANAGEMENT-SYSTEM-using-MERN-STACK/static/js/453.5e560239.chunk.js",
+    "static/media/cms.jpg": "/STUDENT-COURSE-MANAGEMENT-SYSTEM-using-MERN-STACK/static/media/cms.9a20686fcfdc66690cf4.jpg",
+    "static/media/logo.png": "/STUDENT-COURSE-MANAGEMENT-SYSTEM-using-MERN-STACK/static/media/logo.03bd35900f0bb6ac2894.png",
+    "index.html": "/STUDENT-COURSE-MANAGEMENT-SYSTEM-using-MERN-STACK/index.html",
+    "main.81e8d2c5.css.map": "/STUDENT-COURSE-MANAGEMENT-SYSTEM-using-MERN-STACK/static/css/main.81e8d2c5.css.map",
+    "main.c731620c.js.map": "/STUDENT-COURSE-MANAGEMENT-SYSTEM-using-MERN-STACK/static/js/main.c731620c.js.map",
+    "453.5e560239.chunk.js.map": "/STUDENT-COURSE-MANAGEMENT-SYSTEM-using-MERN-STACK/static/js/453.5e560239.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81e8d2c5.css",
+    "static/js/main.c731620c.js"
+  ]
+}

@@ -1,0 +1,63 @@
+/* Home.css */
+
+/* Container styling */
+.home-container {
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  /* Header styling */
+  .header {
+    margin-bottom: 40px;
+  }
+  
+  .home-heading {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .home-subtitle {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Content container styling */
+  .content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Section container styling */
+  .section-container {
+    flex-basis: calc(25% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .content-container {
+      flex-direction: column;
+    }
+  
+    .section-container {
+      flex-basis: 100%;
+    }
+  }
+
+  .image-container {
+    width: 100%;
+    text-align: center; /* Center the image horizontally */
+  }
+  
+  .home-image {
+    width: 100%; /* Make the image cover the full width of its container */
+    max-width: 100%; /* Ensure the image does not exceed its original size */
+    height: auto; /* Maintain the aspect ratio of the image */
+  }
+  
+  
