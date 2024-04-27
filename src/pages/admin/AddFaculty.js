@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './admincss/AddFaculty.css'; // Import CSS for styling
-import config from '../config'
+import config from '../../config'
 
 export default function AddFaculty() {
     const [formData, setFormData] = useState({

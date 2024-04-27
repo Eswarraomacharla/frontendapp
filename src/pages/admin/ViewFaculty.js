@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './admincss/ViewFaculty.css';
-import config from '../config'
+import config from '../../config'
 
 export default function ViewFaculty() {
     const [facultyList, setFacultyList] = useState([]); // Define facultyList state variable

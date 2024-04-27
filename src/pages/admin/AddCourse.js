@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './admincss/AddCourse.css'; 
 import axios from 'axios';
-import config from '../config'
+import config from '../../config'
 export default function AddCourse() {
     const [formData, setFormData] = useState({
         department: '',

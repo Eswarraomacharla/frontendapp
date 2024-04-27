@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './admincss/ViewStudent.css'; // Import CSS file for styling
-import config from '../config'
+import config from '../../config'
 
 export default function ViewStudent() {
     const [studentList, setStudentList] = useState([]); // Define studentList state variable

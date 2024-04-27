@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './admincss/UpdateFaculty.css'; 
-import config from '../config'
+import config from '../../config'
 
 export default function UpdateFaculty() {
     const [facultyList, setFacultyList] = useState([]); 

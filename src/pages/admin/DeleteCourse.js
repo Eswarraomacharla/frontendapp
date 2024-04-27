@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './admincss/DeleteCourse.css'; 
-import config from '../config'
+import config from '../../config'
 
 export default function DeleteCourse() {
     const [courseList, setCourseList] = useState([]); 

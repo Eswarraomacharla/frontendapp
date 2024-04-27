@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './admincss/UpdateStudent.css'; 
-import config from '../config'
+import config from '../../config'
 
 export default function UpdateStudent() {
     const [studentList, setStudentList] = useState([]); 
@@ -54,7 +54,7 @@ export default function UpdateStudent() {
 
     const handleUpdateStudent = async () => {
         try {
-            await axios.put(`http://localhost:1234/updatestudent/${selectedStudent.studentId}`, updateData);
+            await axios.put(`${config.url}/updatestudent/${selectedStudent.studentId}`, updateData);
             getStudent();
             setSelectedStudent(null);
             setUpdateData({

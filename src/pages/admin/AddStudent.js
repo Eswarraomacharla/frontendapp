@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './admincss/AddStudent.css';
-import config from '../config'
+import config from '../../config'
 
 export default function AddStudent() {
     const [formData, setFormData] = useState({
