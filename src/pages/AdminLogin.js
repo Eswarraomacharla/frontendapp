@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import axios from 'axios'
+import axios from 'axios';
 import config from '../config';
+import './AdminLogin.css'; // Import CSS file
+
 const AdminLogin = () => {
   const [formData, setFormData] = useState({
     username: '',
     password: ''
   });
-  const [message,setMessage] = useState("")
-  const [error,setError] = useState("")
-
-  // const navigate = useNavigate();
+  const [message, setMessage] = useState('');
+  const [error, setError] = useState('');
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -18,61 +18,53 @@ const AdminLogin = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try 
-    {
+    try {
       const response = await axios.post(`${config.url}/checkadminlogin`, formData);
-      if (response.data!=null) 
-      {
-        // navigate("/adminhome")
-        window.location.replace("/admin/dashboard")
-      } 
-      else 
-      {
-        setMessage("Login Failed")
-        setError("")
+      if (response.data != null) {
+        window.location.replace('/admin/dashboard');
+      } else {
+        setMessage('Login Failed');
+        setError('');
       }
-    } 
-    catch (error) 
-    {
-      setMessage("")
-      setError(error.message)
+    } catch (error) {
+      setMessage('');
+      setError(error.message);
     }
   };
+
   return (
-    <div>
+    <div className="container"> {/* Updated class name */}
       <br />
-      <h3 align="center"><u>Admin Login</u></h3>
-      {
-        message? <h4 style={{color:"green"}}>{message}</h4>:<h4 style={{color:"red"}}>{error}</h4>
-      }
+      <h3 className="login-heading" align="center"><u>Admin Login</u></h3> {/* Updated class name */}
+      {message ? <h4 className="login-message">{message}</h4> : <h4 className="login-message">{error}</h4>} {/* Updated class name */}
       <br />
       <form onSubmit={handleSubmit}>
-        <div style={{ textAlign: 'center' }}>
-          <label>Admin Username:</label>
+        <div className="form-group"> {/* Updated class name */}
+          <label className="form-label">Admin Username:</label> {/* Updated class name */}
           <input
             type="text"
             id="username"
             value={formData.username}
             onChange={handleChange}
+            className="form-input"
             required
-            style={{ width: '200px' ,height:'25px'}} // Adjust the width as needed
           />
         </div>
         <br />
-        <div style={{ textAlign: 'center' }}>
-          <label>Admin Password:</label>
+        <div className="form-group"> {/* Updated class name */}
+          <label className="form-label">Admin Password:</label> {/* Updated class name */}
           <input
             type="password"
             id="password"
             value={formData.password}
             onChange={handleChange}
+            className="form-input"
             required
-            style={{ width: '200px' ,height:'20px'}} // Adjust the width as needed
           />
         </div>
         <br />
-        <div style={{ textAlign: 'center' }}>
-          <button type="submit">Login</button>
+        <div className="centered">
+          <button type="submit" className="submit-button">Login</button> {/* Updated class name */}
         </div>
       </form>
     </div>
