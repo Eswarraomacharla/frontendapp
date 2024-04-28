@@ -28,6 +28,8 @@ import StudentCourses from './pages/student/StudentCourses';
 import DisplayCourses from './pages/student/DisplayCourses';
 import FacultyCourseMapping from './pages/admin/FacultyCourseMapping';
 import DisplayMapping from './pages/admin/DisplayMapping';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
   return (
     <Router>
