@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css'; // Import CSS file
 import logo from './logo.png'; // Import logo image file
 
 const Navbar = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const dropdownRef = useRef(null);
 
     const toggleDropdown = () => {
         setIsDropdownOpen(!isDropdownOpen);
@@ -22,7 +23,7 @@ const Navbar = () => {
                     <li className="nav-link">
                         <Link className='nav-link' to="#" onClick={toggleDropdown}>Login</Link>
                         {isDropdownOpen && (
-                            <ul className="dropdown">
+                            <ul className="dropdown" ref={dropdownRef}>
                                 <li><Link className='nav-link' to="/studentlogin">Student</Link></li>
                                 <li><Link className='nav-link' to="/facultylogin">Faculty</Link></li>
                                 <li><Link className='nav-link' to="/adminlogin">Admin</Link></li>
