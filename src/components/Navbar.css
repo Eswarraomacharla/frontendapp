@@ -1,104 +1,57 @@
+/* Navbar.css */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: #333;
+    background-color: rgb(8, 161, 138);
     color: #fff;
-  }
-  
-  .logo img {
-    width: 100px; /* Adjust according to your logo size */
-  }
-  
-  .nav-menu {
+    padding: 10px 20px;
+}
+
+.logo {
+    padding: 10px; /* Adjust the padding as needed */
+}
+
+.logo img {
+    width: 150px; /* Set the width of the logo image */
+    height: 50px; /* Maintain the aspect ratio */
+}
+
+.nav-menu {
     display: flex;
-  }
-  
-  .nav-menu ul {
-    list-style-type: none;
-    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu ul {
+    list-style: none;
     padding: 0;
-  }
-  
-  .nav-menu li {
-    margin-right: 1rem;
-  }
-  
-  .nav-link {
-    color: #fff;
+    margin: 0;
+    display: flex;
+}
+
+.nav-link {
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .nav-link:hover {
-    background-color: #555;
-  }
-  
-  .dropdown {
-    position: absolute;
-    background-color: #333;
-    padding: 0.5rem;
+    color: rgb(244, 237, 237);
+    padding: 8px 12px;
+    margin-right: 10px;
     border-radius: 5px;
-    top: 100%;
-    left: 0;
-    display: none;
-  }
-  
-  .dropdown li {
-    margin: 0.5rem 0;
-  }
-  
-  .dropdown .nav-link {
-    display: block;
-  }
-  
-  /* Media Query for Mobile View */
-  @media (max-width: 768px) {
-    .nav-menu {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: #333;
-      width: 100%;
-      text-align: center;
-    }
-  
-    .nav-menu.active {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .nav-menu.active li {
-      margin: 1rem 0;
-    }
-  
-    .nav-menu.active .dropdown {
-      position: static;
-      display: block;
-      width: 100%;
-      margin-top: 1rem;
-    }
-  
-    .dropdown {
-      position: static;
-      display: block;
-    }
-  
-    .dropdown li {
-      margin: 0.5rem auto;
-    }
-  
-    .nav-link {
-      display: block;
-      padding: 1rem 0;
-      border-bottom: 1px solid #666;
-    }
-  
-    .nav-link:last-child {
-      border-bottom: none;
-    }
-  }
-  
+    font-weight: bold;
+}
+
+
+.dropdown {
+    list-style-type: none;
+    position: absolute;
+    background-color: rgb(1, 139, 139);
+    padding: 3em 0;
+    border-radius: 8px;
+    margin: 0;
+    display: none; /* Hide the dropdown by default */
+}
+
+
+
+.nav-link:hover .dropdown {
+    display: block; /* Display the dropdown when hovering over the nav link */
+}
