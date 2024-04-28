@@ -10,14 +10,23 @@ const AdminLogin = () => {
   });
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
+  const [robotChecked, setRobotChecked] = useState(false);
 
   const handleChange = (e) => {
     const { id, value } = e.target;
     setFormData({ ...formData, [id]: value });
   };
 
+  const handleCheckboxChange = (e) => {
+    setRobotChecked(e.target.checked);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!robotChecked) {
+      setError('Please confirm that you are not a robot.');
+      return;
+    }
     try {
       const response = await axios.post(`${config.url}/checkadminlogin`, formData);
       if (response.data != null) {
@@ -63,8 +72,23 @@ const AdminLogin = () => {
           />
         </div>
         <br />
+        <div className="form-group"> {/* Updated class name */}
+          <div className="checkbox-container">
+            <input
+              type="checkbox"
+              id="robotCheckbox"
+              checked={robotChecked}
+              onChange={handleCheckboxChange}
+              className="checkbox-input"
+              required
+            />
+            <span className="checkbox-checkmark"></span>
+          </div>
+          <label className="checkbox-label" htmlFor="robotCheckbox">I am not a robot</label>
+        </div>
+        <br />
         <div className="centered">
-          <button type="submit" className="submit-button">Login</button> {/* Updated class name */}
+          <button type="submit" className="submit-button">Login</button> 
         </div>
       </form>
     </div>
