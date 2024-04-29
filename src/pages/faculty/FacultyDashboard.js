@@ -6,8 +6,8 @@ const FacultyDashboard = () => {
         <div className="faculty-dashboard">
             <nav className="nav">
                 <ul className="nav-list">
-                    <li className="nav-item"><a href="./home">Home</a></li>
-                    <li className="nav-item"><a href="/change-password">Change Password</a></li>
+                    <li className="nav-item"><a href="./dashboard">Home</a></li>
+                    <li className="nav-item"><a href="../student/changepassword">Change Password</a></li>
                     <li className="nav-item"><a href="./mycourses">My Courses</a></li>
                     <li className="nav-item"><a href="./addcoursecontent">Course Content</a></li>
                     <li className="nav-item"><a href="../facultylogin">Logout</a></li>
