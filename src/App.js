@@ -28,6 +28,10 @@ import StudentCourses from './pages/student/StudentCourses';
 import DisplayCourses from './pages/student/DisplayCourses';
 import FacultyCourseMapping from './pages/admin/FacultyCourseMapping';
 import DisplayMapping from './pages/admin/DisplayMapping';
+import StudentChangePassword from './pages/student/StudentChangePassword';
+import AddCourseContent from './pages/faculty/AddCourseContent';
+import MyCourses from './pages/faculty/MyCourses';
+import ViewCourseContent from './pages/student/ViewCourseContent';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -62,6 +66,14 @@ function App() {
         <Route path="/student/displaycourses" element={<DisplayCourses/>}/>
         <Route path="/admin/facultycoursemapping" element={<FacultyCourseMapping/>}/>
         <Route path="/admin/displaymapping" element={<DisplayMapping/>}/>
+        <Route path="/student/changepassword" element={<StudentChangePassword/>}/>
+        <Route path="/faculty/addcoursecontent" element={<AddCourseContent/>}/>
+        <Route path="/faculty/mycourses" element={<MyCourses/>}/>
+        <Route path="/student/viewcoursecontent" element={<ViewCourseContent/>}/>
+
+
+
+
       </Routes>
     </Router>
   );

@@ -29,9 +29,9 @@ const StudentDashboard = () => {
             <nav className="nav">
                 <ul className="nav-list">
                     <li className="nav-item"><a href="./dashboard">Home</a></li>
-                    <li className="nav-item"><a href="/changepassword">Change Password</a></li>
-                    <li className="nav-item"><a href="/student/studentcourses">View Courses</a></li>
-                    <li className="nav-item"><a href="/viewcoursecontent">View Course Content</a></li>
+                    <li className="nav-item"><a href="./changepassword">Change Password</a></li>
+                    <li className="nav-item"><a href="./studentcourses">View Courses</a></li>
+                    <li className="nav-item"><a href="./viewcoursecontent">View Course Content</a></li>
                     <li className="nav-item"><a href="../studentlogin">Logout</a></li>
                 </ul>
             </nav>
