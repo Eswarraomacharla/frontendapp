@@ -1,6 +1,5 @@
-// AdminCourse.js
 import React from 'react';
-import './admincss/AdminCourse.css'; // Import CSS file for styling
+import './admincss/AdminCourse.css'; 
 
 const AdminCourse = () => {
     return (

@@ -10,7 +10,7 @@ const FacultyLogin = () => {
   const [message, setMessage] = useState('');
   const [robotChecked, setRobotChecked] = useState(false);
 
-  const defaultPassword = "1234"; // Set your default password here
+  const defaultPassword = "1234"; 
 
   const handleSubmit = async (event) => {
     event.preventDefault();

@@ -1,6 +1,6 @@
 import React from 'react';
-import cms from './images/cms.jpg'; // Import logo image file
-import './Home.css'; // Import CSS file for Home component
+import cms from './images/cms.jpg'; 
+import './Home.css'; 
 
 const Home = () => {
     return (

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './admincss/AddFaculty.css'; // Import CSS for styling
+import './admincss/AddFaculty.css'; 
 import config from '../../config'
 
 export default function AddFaculty() {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './MyCourses.css'; // Import CSS file
+import './MyCourses.css';
 import config from '../../config';
 
 function MyCourses() {
@@ -8,7 +8,7 @@ function MyCourses() {
 
   const fetchCourses = async () => {
     try {
-      const response = await axios.get(`${config.url}/getcourse`); // Update the endpoint according to your backend route
+      const response = await axios.get(`${config.url}/getcourse`); 
       setCourses(Array.isArray(response.data) ? response.data : []);
     } catch (error) {
       console.error('Error fetching courses:', error);

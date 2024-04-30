@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './admincss/ViewCourse.css'; // Import CSS file for styling
+import './admincss/ViewCourse.css'; 
 import config from '../../config'
 
 export default function ViewCourse() {

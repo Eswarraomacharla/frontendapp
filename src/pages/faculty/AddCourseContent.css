@@ -1,4 +1,3 @@
-/* AddCourseContent.css */
 
 .container {
     margin: 20px auto;
@@ -24,7 +23,7 @@
   }
   
   textarea.form-input {
-    height: 50px; /* Adjust as needed */
+    height: 50px;
   }
   
   .submit-button {

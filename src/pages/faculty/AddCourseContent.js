@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './AddCourseContent.css'; // Import CSS file
+import './AddCourseContent.css'; 
 import config from '../../config';
 
 function AddCourseContent() {

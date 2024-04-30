@@ -16,7 +16,7 @@ export default function UpdateStudent() {
         address:"",
         dateOfBirth:""
     });
-    const [filterId, setFilterId] = useState(''); // State for filtering by student ID
+    const [filterId, setFilterId] = useState(''); 
 
     const getStudent = async () => {
         try {
@@ -71,7 +71,6 @@ export default function UpdateStudent() {
         }
     }
 
-    // Filter students by ID
     const filteredStudentsById = studentList.filter(student => student.studentId.includes(filterId));
 
     return (

@@ -1,20 +1,14 @@
-// StudentDashboard.js
 import React, { useState, useEffect } from 'react';
 import './StudentDashboard.css';
 
 const StudentDashboard = () => {
-    // State to store student ID
     const [studentId, setStudentId] = useState('');
 
-    // Function to fetch student ID (You need to implement this function)
     const fetchStudentId = () => {
-        // Retrieve student ID from storage or backend API
-        // For example, you can use sessionStorage, localStorage, or fetch from backend
         const studentIdFromStorage = sessionStorage.getItem('studentId');
         setStudentId(studentIdFromStorage);
     };
 
-    // Fetch student ID when component mounts
     useEffect(() => {
         fetchStudentId();
     }, []);

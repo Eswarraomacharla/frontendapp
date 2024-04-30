@@ -1,4 +1,3 @@
-// UpdateFaculty.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './admincss/UpdateFaculty.css'; 
@@ -16,7 +15,7 @@ export default function UpdateFaculty() {
         email: "",
         contact: ""
     });
-    const [filterId, setFilterId] = useState(''); // State for filtering by faculty ID
+    const [filterId, setFilterId] = useState(''); 
 
     const getFaculty = async () => {
         try {
@@ -71,7 +70,6 @@ export default function UpdateFaculty() {
         }
     }
 
-    // Filter faculty by ID
     const filteredFacultyById = facultyList.filter(faculty => faculty.facultyId.includes(filterId));
 
     return (

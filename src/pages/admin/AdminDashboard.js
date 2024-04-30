@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Modal, Form, TextArea } from 'semantic-ui-react'; // Assuming you're using Semantic UI React components for UI elements
+import { Button, Modal, Form, TextArea } from 'semantic-ui-react'; 
 import './admincss/AdminDashboard.css';
 
 const AdminDashboard = () => {
@@ -37,12 +37,10 @@ const AdminDashboard = () => {
                 </ul>
             </div>
 
-            {/* Button to trigger sending email modal */}
             <div className="bottom-menu">
                 <Button onClick={() => setOpen(true)}>Send Email to All Students</Button>
             </div>
 
-            {/* Modal for sending email */}
             <Modal
                 onClose={() => setOpen(false)}
                 onOpen={() => setOpen(true)}

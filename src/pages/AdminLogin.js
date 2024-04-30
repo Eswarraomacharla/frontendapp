@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import config from '../config';
-import './AdminLogin.css'; // Import CSS file
+import './AdminLogin.css'; 
 
 const AdminLogin = () => {
   const [formData, setFormData] = useState({
@@ -42,14 +42,14 @@ const AdminLogin = () => {
   };
 
   return (
-    <div className="container"> {/* Updated class name */}
+    <div className="container"> 
       <br />
-      <h3 className="login-heading" align="center"><u>Admin Login</u></h3> {/* Updated class name */}
+      <h3 className="login-heading" align="center"><u>Admin Login</u></h3> 
       {message ? <h4 className="login-message">{message}</h4> : <h4 className="login-message">{error}</h4>} {/* Updated class name */}
       <br />
       <form onSubmit={handleSubmit}>
-        <div className="form-group"> {/* Updated class name */}
-          <label className="form-label">Admin Username:</label> {/* Updated class name */}
+        <div className="form-group"> 
+          <label className="form-label">Admin Username:</label> 
           <input
             type="text"
             id="username"
@@ -60,8 +60,8 @@ const AdminLogin = () => {
           />
         </div>
         <br />
-        <div className="form-group"> {/* Updated class name */}
-          <label className="form-label">Admin Password:</label> {/* Updated class name */}
+        <div className="form-group"> 
+          <label className="form-label">Admin Password:</label> 
           <input
             type="password"
             id="password"
@@ -72,7 +72,7 @@ const AdminLogin = () => {
           />
         </div>
         <br />
-        <div className="form-group"> {/* Updated class name */}
+        <div className="form-group"> 
           <div className="checkbox-container">
             <input
               type="checkbox"

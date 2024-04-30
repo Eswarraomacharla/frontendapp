@@ -4,16 +4,16 @@ import './admincss/ViewFaculty.css';
 import config from '../../config'
 
 export default function ViewFaculty() {
-    const [facultyList, setFacultyList] = useState([]); // Define facultyList state variable
-    const [filteredFacultyList, setFilteredFacultyList] = useState([]); // Define filteredFacultyList state variable
-    const [error, setError] = useState(""); // State variable for error handling
-    const [filterInput, setFilterInput] = useState(""); // State variable for filter input
+    const [facultyList, setFacultyList] = useState([]); 
+    const [filteredFacultyList, setFilteredFacultyList] = useState([]); 
+    const [error, setError] = useState(""); 
+    const [filterInput, setFilterInput] = useState(""); 
 
     useEffect(() => {
         axios.get(`${config.url}/getfaculty`)
             .then(response => {
                 setFacultyList(response.data);
-                setFilteredFacultyList(response.data); // Initialize filteredFacultyList with all faculty members
+                setFilteredFacultyList(response.data); 
             })
             .catch(error => {
                 setError("Error fetching faculty data. Please try again later.");
@@ -21,22 +21,20 @@ export default function ViewFaculty() {
             });
     }, []);
 
-    // Function to handle filter input change
     const handleFilterChange = (e) => {
         setFilterInput(e.target.value);
-        filterFaculty(e.target.value); // Filter faculty members based on input
+        filterFaculty(e.target.value); 
     };
 
-    // Function to filter faculty members based on input
     const filterFaculty = (input) => {
         if (input.trim() === "") {
-            setFilteredFacultyList(facultyList); // Reset to display all faculty members if input is empty
+            setFilteredFacultyList(facultyList); 
         } else {
             const filtered = facultyList.filter(faculty =>
                 faculty.fullName.toLowerCase().includes(input.toLowerCase()) ||
                 faculty.department.toLowerCase().includes(input.toLowerCase())
             );
-            setFilteredFacultyList(filtered); // Update filteredFacultyList with filtered results
+            setFilteredFacultyList(filtered); 
         }
     };
 

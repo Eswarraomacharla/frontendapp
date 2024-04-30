@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './StudentChangePassword.css'; // Import CSS file
+import './StudentChangePassword.css'; 
 import config from '../../config';
 
 const StudentChangePassword = () => {

@@ -1,4 +1,3 @@
-// AdminStudent.js
 import React from 'react';
 import './admincss/AdminStudent.css';
 

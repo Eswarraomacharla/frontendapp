@@ -1,4 +1,3 @@
-// AdminFaculty.js
 import React from 'react';
 import './admincss/AdminFaculty.css';
 

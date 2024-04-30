@@ -1,6 +1,4 @@
-/* MyCourses.css */
 
-/* Table styles */
 .responsive-table {
     width: 100%;
     border-collapse: collapse;
@@ -18,7 +16,6 @@
     background-color: #f2f2f2;
   }
   
-  /* Button styles */
   .update-btn,
   .delete-btn {
     padding: 5px 10px;

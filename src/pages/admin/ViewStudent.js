@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './admincss/ViewStudent.css'; // Import CSS file for styling
+import './admincss/ViewStudent.css'; 
 import config from '../../config'
 
 export default function ViewStudent() {
-    const [studentList, setStudentList] = useState([]); // Define studentList state variable
-    const [searchTerm, setSearchTerm] = useState(''); // Define state variable for search term
+    const [studentList, setStudentList] = useState([]); 
+    const [searchTerm, setSearchTerm] = useState('');
 
     useEffect(() => {
         axios.get(`${config.url}/getstudent`)
@@ -17,7 +17,6 @@ export default function ViewStudent() {
             });
     }, []);
 
-    // Filter the studentList based on search term
     const filteredStudents = studentList.filter(student =>
         student.fullName.toLowerCase().includes(searchTerm.toLowerCase())
     );
